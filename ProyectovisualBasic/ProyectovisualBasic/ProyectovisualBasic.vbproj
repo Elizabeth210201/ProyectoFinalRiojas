@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{86A62D76-FAAF-498B-85D5-10E02DF7248D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ProyectovisualBasic.My.MyApplication</StartupObject>
+    <RootNamespace>ProyectovisualBasic</RootNamespace>
+    <AssemblyName>ProyectovisualBasic</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ProyectovisualBasic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ProyectovisualBasic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArbolBinario.vb" />
+    <Compile Include="Arboles.Designer.vb">
+      <DependentUpon>Arboles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arboles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cola.vb" />
+    <Compile Include="Colas.Designer.vb">
+      <DependentUpon>Colas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Colas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstructuraDeDatos.Designer.vb">
+      <DependentUpon>EstructuraDeDatos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EstructuraDeDatos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb" />
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grafos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grafos1.Designer.vb">
+      <DependentUpon>Grafos1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Grafos1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrafosconListas.vb" />
+    <Compile Include="Lista.vb" />
+    <Compile Include="ListaDCircular.vb" />
+    <Compile Include="ListasCirculares.Designer.vb">
+      <DependentUpon>ListasCirculares.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListasCirculares.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListasCirculares1.vb" />
+    <Compile Include="ListasDCirculares.Designer.vb">
+      <DependentUpon>ListasDCirculares.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListasDCirculares.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListasDEnlazadas.Designer.vb">
+      <DependentUpon>ListasDEnlazadas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListasDEnlazadas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListasDoblesE.vb" />
+    <Compile Include="ListaSimple.vb" />
+    <Compile Include="ListasSimples.Designer.vb">
+      <DependentUpon>ListasSimples.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListasSimples.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetodosOrdenamiento.Designer.vb">
+      <DependentUpon>MetodosOrdenamiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MetodosOrdenamiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Nodo.vb" />
+    <Compile Include="Nodo1.vb" />
+    <Compile Include="Ordenar.vb" />
+    <Compile Include="Pila.vb" />
+    <Compile Include="Pilas.Designer.vb">
+      <DependentUpon>Pilas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pilas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Arboles.resx">
+      <DependentUpon>Arboles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Colas.resx">
+      <DependentUpon>Colas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstructuraDeDatos.resx">
+      <DependentUpon>EstructuraDeDatos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grafos1.resx">
+      <DependentUpon>Grafos1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListasCirculares.resx">
+      <DependentUpon>ListasCirculares.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListasDCirculares.resx">
+      <DependentUpon>ListasDCirculares.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListasDEnlazadas.resx">
+      <DependentUpon>ListasDEnlazadas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListasSimples.resx">
+      <DependentUpon>ListasSimples.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetodosOrdenamiento.resx">
+      <DependentUpon>MetodosOrdenamiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pilas.resx">
+      <DependentUpon>Pilas.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
